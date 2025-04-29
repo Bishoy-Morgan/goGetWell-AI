@@ -134,18 +134,18 @@ function MissionAndChallenge() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="container w-full flex flex-col lg:flex-row items-start "
+            className="container w-full flex flex-col lg:flex-row gap-y-8 lg:gap-y-0 items-start "
             >
                 {/* Text Slider */}
                 <div 
                 ref={textSliderRef} 
-                className="keen-slider transition-all duration-1000 ease-in-out !w-1/3 lg:h-[60vh] !max-h-[40rem] "
+                className="keen-slider transition-all duration-1000 ease-in-out w-full lg:!w-1/3 lg:h-[60vh] !max-h-[40rem] "
                 >
                     {stats.map((stat, index) => (
-                        <div key={index} className="keen-slider__slide w-full h-full flex flex-col justify-between">
+                        <div key={index} className="keen-slider__slide w-full h-full flex flex-col gap-y-8 lg:gap-y-0 justify-between">
                             {stat.mainStats.map((item, idx) => (
-                                <div key={idx} className="flex flex-col items-start gap-y-4">
-                                    <h3 className="px-4 font-bold tracking-wide border-l-2 pt-1 border-purple text-white">
+                                <div key={idx} className="flex flex-col items-start lg:gap-y-4">
+                                    <h3 className="px-4 font-bold tracking-wide border-l-2 lg:pt-1 border-purple text-white">
                                         {item.number}
                                     </h3>
                                     <p className="p2 pl-4 text-gray tracking-widest">
