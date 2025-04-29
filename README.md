@@ -52,15 +52,3 @@ The platform is built using the following technologies:
 ### 5. **Analytics & Reporting**
    - Access detailed analytics to track patient interactions, consultation bookings, and business performance.
 
-## Installation
-If you're developing or deploying the GoGetWell.ai platform locally or want to contribute to the project, follow these installation instructions.
-
-### Prerequisites
-- Node.js (v14 or above)
-- npm or yarn
-- PostgreSQL (for local database setup)
-
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/yourusername/GoGetWell-ai.git
-cd GoGetWell-ai
