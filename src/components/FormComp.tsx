@@ -20,7 +20,7 @@ const FormComp: React.FC<FormCompProps> = ({ formName }) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-        className="w-1/2 p-8 flex flex-col gap-y-6 rounded-xl bg-black/10"
+        className="w-full lg:w-1/2 mt-16 lg:mt-0 lg:p-8 flex flex-col gap-y-6 rounded-xl bg-black/10"
         >
             {/* Name Input */}
             <div className="group relative w-full">

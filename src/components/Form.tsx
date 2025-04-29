@@ -12,14 +12,14 @@ const Form = () => {
         className='purple-gradient-rightTop w-full py-32 flex items-center'
         >
             <div 
-            className='container flex justify-between gap-x-10 '
+            className='container flex flex-col lg:flex-row justify-between gap-x-10 '
             >
                 <motion.div 
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className='w-1/2 flex flex-col '
+                className='w-full lg:w-1/2 flex flex-col '
                 >
                     <h2>Get in touch</h2>
                     <span className='p2 mt-10 mb-16 text-gray  '>

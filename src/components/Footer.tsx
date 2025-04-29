@@ -7,9 +7,9 @@ import linkedin from '@/public/icons/linkedin.svg'
 
 const Footer: React.FC = () => {
     return (
-        <footer className='w-full pt-20 pb-10 '>
+        <footer className='w-full lg:pt-20 pb-10 '>
             <div className='container flex flex-col justify-center items-center'>
-                <div className='w-1/2 flex flex-col items-center justify-center'>
+                <div className='w-4/5 lg:w-1/2 flex flex-col items-center justify-center'>
                     <h4 className='text-center'>
                         Reach Out to Us
                     </h4>
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                             />
                         </Link>
                     </ul>
-                    <ul className='w-full mb-8 text-sm flex items-center justify-between'>
+                    <ul className='w-full mb-8 text-xs lg:text-sm flex flex-col gap-y-2 lg:gap-y-0 lg:flex-row items-center justify-between'>
                         <Link 
                         href={`#`}
                         className='text-gray hover:text-white'

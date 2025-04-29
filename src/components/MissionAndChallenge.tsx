@@ -134,12 +134,12 @@ function MissionAndChallenge() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="container w-full flex items-start "
+            className="container w-full flex flex-col lg:flex-row items-start "
             >
                 {/* Text Slider */}
                 <div 
                 ref={textSliderRef} 
-                className="keen-slider transition-all duration-1000 ease-in-out !w-1/3 h-[60vh] !max-h-[40rem] "
+                className="keen-slider transition-all duration-1000 ease-in-out !w-1/3 lg:h-[60vh] !max-h-[40rem] "
                 >
                     {stats.map((stat, index) => (
                         <div key={index} className="keen-slider__slide w-full h-full flex flex-col justify-between">
@@ -161,7 +161,7 @@ function MissionAndChallenge() {
                 {/* Image Slider */}
                 <motion.div
                 ref={imageSliderRef}
-                className="keen-slider transition-all duration-1000 ease-in-out !w-2/3 relative h-[70vh] !max-h-[40rem]"
+                className="keen-slider transition-all duration-1000 ease-in-out w-full lg:!w-2/3 relative h-[30vh] lg:h-[70vh] !max-h-[40rem]"
                 >
                     {stats.map((stat, index) => {
                         const gradientColors = [

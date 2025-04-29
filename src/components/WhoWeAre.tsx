@@ -12,13 +12,13 @@ const AboutUs: React.FC = () => {
         id='about'
         className="purple-gradient-rightBottom w-full flex flex-col items-center justify-center py-32"
         >
-            <div className='container flex items-center justify-center gap-x-10 '>
+            <div className='container flex flex-col lg:flex-row items-center justify-center gap-x-10 '>
                 <motion.div 
                 initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className='w-1/2 flex flex-col justify-start'
+                className='w-full lg:w-1/2 flex flex-col justify-start'
                 >
                     <span className='p2 inline-block font-bold text-purple '>Discover Our Journey</span>
                     <h2 className='my-10 text-white'>Who We Are</h2>
@@ -34,7 +34,7 @@ const AboutUs: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.8, ease: 'easeOut', delay: .5 }}
-                    className='relative w-1/2 h-[70vh] max-h-[40rem]'
+                    className='relative w-full h-[40vh] lg:w-1/2 lg:h-[70vh] lg:max-h-[40rem] mt-10 lg:mt-0'
                 >
                     <Image 
                     src={platform}
@@ -42,8 +42,7 @@ const AboutUs: React.FC = () => {
                     fill
                     quality={100}
                     priority
-                    objectFit='cover'
-                    className='object-cover overflow-visible'
+                    className='object-contain lg:object-cover lg:overflow-visible '
                     />
                 </motion.div>
             </div>

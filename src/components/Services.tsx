@@ -11,7 +11,6 @@ import time from '@/public/icons/time.gif'
 import layer from '@/public/icons/layer.gif'
 import health from '@/public/icons/health.gif'
 
-
 interface ServicesProps {
     id: number;
     title: string;
@@ -22,7 +21,7 @@ interface ServicesProps {
 const Services: React.FC = () => {
     const [sliderRef] = useKeenSlider<HTMLDivElement>({
         slides: {
-            perView: 4,
+            perView: 4, 
             spacing: 30,
         },
         loop: true,
@@ -32,6 +31,11 @@ const Services: React.FC = () => {
             setInterval(() => {
                 slider.next()
             }, 5000) 
+        },
+        breakpoints: {
+            "(max-width: 768px)": {
+                slides: { perView: 1.5, spacing: 20 }, 
+            },
         }
     });
 
@@ -75,7 +79,7 @@ const Services: React.FC = () => {
     ];
 
     return (
-        <section className="container mx-auto pt-32">
+        <section className="container mx-auto lg:pt-32">
             <div ref={sliderRef} className="keen-slider">
                 {services.map((service) => (
                     <div 
@@ -96,7 +100,7 @@ const Services: React.FC = () => {
                 ))}
             </div>
         </section>
-    )
+    );
 }
 
 export default Services;

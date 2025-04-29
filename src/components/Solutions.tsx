@@ -93,10 +93,10 @@ const Solutions: React.FC = () => {
                     <br />
                     for Lasting Impact
                 </motion.h2>
-                <div className='w-4/5 flex items-center 2xl:justify-center gap-8 mt-8'>
+                <div className='w-full lg:w-4/5 flex flex-col lg:flex-row items-center 2xl:justify-center gap-4 lg:gap-8 mt-8'>
                     
                     {/* First container for odd indexed solutions */}
-                    <div className='w-1/2 2xl:w-2/5 flex flex-col space-y-12 '>
+                    <div className='w-full lg:w-1/2 2xl:w-2/5 flex flex-col space-y-12 '>
                         {solutions.filter((solution, index) => index % 2 !== 0).map((solution: SolutionsProps) => (
                             <motion.div
                                 key={solution.id}
@@ -111,8 +111,7 @@ const Solutions: React.FC = () => {
                                         src={solution.img}
                                         alt={solution.title}
                                         fill
-                                        priority
-                                        quality={100}
+                                        quality={75}
                                         objectFit='cover'
                                         sizes="100vw"
                                         className="object-cover rounded-t-xl"
@@ -122,7 +121,7 @@ const Solutions: React.FC = () => {
                                 <div className='w-full h-[30vh] group-hover:h-[35vh] flex flex-col p-6 transition-all duration-300 ease-in-out '>
                                     <h4>{solution.title}</h4>
                                     <p className='p3 mt-2'>{solution.description}</p>
-                                    <button className='translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 w-fit pt-2 flex items-center gap-x-2 rounded-xl transition-all duration-300 ease-in-out '>
+                                    <button className='translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 w-fit pt-4 flex items-center gap-x-2 rounded-xl transition-all duration-300 ease-in-out '>
                                         <span className='text-sm font-bold text-purple'>
                                             Dicover more
                                         </span>
@@ -138,7 +137,7 @@ const Solutions: React.FC = () => {
                         ))}
                     </div>
                     {/* Second container for even indexed solutions */}
-                    <div className='w-1/2 2xl:w-2/5 flex flex-col space-y-12 '>
+                    <div className='w-full lg:w-1/2 2xl:w-2/5 flex flex-col space-y-12 '>
                         {solutions.filter((solution, index) => index % 2 === 0).map((solution: SolutionsProps) => (
                             <motion.div
                                 key={solution.id}
@@ -153,7 +152,6 @@ const Solutions: React.FC = () => {
                                         src={solution.img}
                                         alt={solution.title}
                                         fill
-                                        priority
                                         quality={100}
                                         objectFit='cover'
                                         sizes="100vw"
@@ -164,7 +162,7 @@ const Solutions: React.FC = () => {
                                 <div className='w-full h-[30vh] group-hover:h-[35vh] flex flex-col p-6 transition-all duration-300 ease-in-out'>
                                     <h4>{solution.title}</h4>
                                     <p className='p3 mt-2'>{solution.description}</p>
-                                    <button className='translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 w-fit pt-2 flex items-center gap-x-2 rounded-xl transition-all duration-300 ease-in-out '>
+                                    <button className='translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 w-fit pt-4 flex items-center gap-x-2 rounded-xl transition-all duration-300 ease-in-out '>
                                         <span className='text-sm font-bold text-purple'>
                                             Dicover more
                                         </span>
