@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+GoGetWell.ai - SaaS Platform for Healthcare Facilitators
+GoGetWell.ai is a powerful, AI-driven platform designed to help healthcare facilitators and independent healthcare professionals streamline their operations. From custom websites to patient lead management and seamless AI integration, GoGetWell.ai enhances communication and business efficiency.
 
-## Getting Started
+This is a SaaS (Software as a Service) platform that allows healthcare facilitators to sign up, customize their front-office tasks, manage patients, schedule appointments, and much more — all powered by AI.
 
-First, run the development server:
+Table of Contents
+Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+How to Use
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+API Integration
 
-## Learn More
+Security and Compliance
 
-To learn more about Next.js, take a look at the following resources:
+Subscription Plans
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Support
 
-## Deploy on Vercel
+Features
+AI-powered Front Office: Automates lead management, appointment scheduling, and communication.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Custom Websites: Easily create a branded website with pre-designed templates and customization options.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Patient Lead Management: Captures, organizes, and prioritizes patient leads, ensuring no opportunities are missed.
+
+Real-time Appointment Scheduling: Provides patients with easy scheduling options for consultations.
+
+Integration with Hospitals: Easily connects with hospital systems for billing and communication.
+
+Data Security & Compliance: Ensures compliance with healthcare regulations and offers secure data handling.
+
+Tech Stack
+Frontend: React.js, Next.js, Tailwind CSS
+
+Backend: Node.js, Express
+
+Database: PostgreSQL
+
+AI & NLP: Integrated AI for patient lead management and communication
+
+Hosting: AWS, Vercel (for serverless deployments)
+
+Authentication: JWT-based authentication for secure access
+
+How to Use
+1. Sign Up & Onboarding
+Go to the GoGetWell.ai platform and sign up with your email or Google account.
+
+Complete the onboarding process to customize your front-office tasks and integrate your healthcare business.
+
+2. Customizing Your Website
+Once signed up, access the "Website Builder" dashboard to select a template, customize your branding, and input service information.
+
+You can modify the content, design, and layout according to your specific needs.
+
+3. Managing Patients & Leads
+Navigate to the "Patient Management" section where the AI captures and organizes leads.
+
+Schedule consultations directly through the platform, with AI assistance handling follow-ups and reminders.
+
+4. Integrating with Hospitals
+Connect your account to hospitals and medical centers you work with for seamless billing and communication.
+
+5. Analytics & Reporting
+Access detailed analytics to track patient interactions, consultation bookings, and business performance.
